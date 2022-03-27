@@ -1,0 +1,510 @@
+/* General Styling */
+
+* {
+    box-sizing: border-box;
+}
+
+.row{
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    line-height: 1.7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Title Page styling */
+.title{
+    position: relative;
+    margin-top: 40vh;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3.5rem;
+}
+/* +++++++++Formatting for cell phone devices++++++++++++ */
+@media only screen and (max-width: 767px) {
+    .title{
+        font-size: 2.3rem;
+        margin-left: 6px;
+    }
+
+    .quote p{
+        font-size: 2.5rem;
+    }
+
+    .navbar-header button .icon-bar{
+        border: 2px solid white;
+    }
+
+    .dark ul {
+        background: white;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .dark ul li{
+        width: auto;
+    }
+
+    .dark #myNavbar{
+        width: 100%;
+        padding: 0px;
+    }
+
+    .dark .navbar-header button .icon-bar{
+        color: black;
+        border: 2px solid #3D4E57;
+    }
+
+
+    .row{
+        margin: 0;
+    }
+    
+}
+
+/* ++++++++++END CELL PHONE FORMATTING */
+
+
+/* General Headings and text formatting */
+
+h1{
+    color: white;
+    text-align: center;
+    margin: 0 0;
+    position: relative;
+    top: 35%;
+    text-transform: uppercase;    
+}   
+h3{
+    font-weight: 700;
+}
+
+h4{
+    font-size: 22px;
+    font-weight: 400;
+}
+
+
+p{
+    margin: 0;
+    position: relative;
+}
+
+
+/* Box shadow for container, container fluid allows for adjustment to full screen formatting if desired */
+.container{
+    margin: auto;
+    box-shadow: 0 0 200px 20px black; 
+}
+
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+
+/* Title Pages Styling */
+.page{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+#home{
+    background-image: url(../images/img2.jpg);
+}
+
+#about{
+    background-image: url(../images/img12a.jpg);
+}
+
+#education{
+    background-image: url(../images/img5a.jpg);
+}
+
+#work{
+    background-image: url(../images/img8a.jpg);
+}
+
+#play{
+    background-image: url(../images/img11a.jpg);
+}
+
+#contact{
+    background-image: url(../images/img10a.jpg);
+}
+
+/* End Title Pages Styling */
+
+/* Content Sections */
+.content{
+    display: none;
+    padding-top:10vh;
+}
+
+.content h1{
+    color: #55646C;
+    text-transform: uppercase;
+}
+
+/* Home page quote and navigation settings */
+.quote{
+    font-family: Alex Brush, cursive;
+    color: white;
+    text-align: center;
+    margin: 12px 0;
+    position: relative;
+    top: 40vh;
+    font-size: 36px;
+}
+
+
+.navbar{
+    width: inherit;
+    margin: auto;
+    
+}
+
+.navbar.navbar-fixed-top{
+    z-index: 999;
+}
+
+.navbar-right{
+    margin-right: 15px;
+    
+}
+
+a.scroll{
+    color: white;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.navbar, .navbar-right a.scroll, #logo, .dark, .dark #logo, .dark ul li a{
+    transition: all 1.5s ease;
+}
+
+#logo{
+    font-size: 2em;
+    color: white;
+    padding-left: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+}
+
+
+.dark{
+    background: white;
+    z-index: 2;
+    box-shadow: 0 20px 20px rgba(0,0,0,.2);
+    
+    
+}
+
+.dark ul li a{
+    color: #3D4E57;
+    
+}
+
+.dark #logo{
+    color: #3D4E57;
+    
+}
+
+.clear{
+    clear: both;
+}
+
+.selectors{
+    position: relative;
+    list-style-type: none;
+    top: 55%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.selectors li{
+    display: inline-block;
+    padding: 20px 60px;
+}
+
+.selectors li a{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* formatting for active typing */
+#target, #cursor{
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid white;
+    position: absolute;
+
+}
+
+/* contacts formatting */
+#contact-form{
+    box-shadow: 0 20px 40px rgba(0,0,0,.2);
+    padding: 5%;
+    margin-top: 10%;
+}
+
+.contact-area textarea.form-control{
+    border:2px solid #a2a2a2;
+    padding: 6px;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+.contact-area .form-control{
+    border: none;
+    border-bottom: 2px solid #a2a2a2;
+    box-shadow: none;
+    padding: 6px 0;
+    border-radius: 0;
+    margin-bottom: 30px;
+}
+
+.btn.btn-send {
+    background: #3D4E57;
+    color: #ffffff;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+.contact-area div.contact-box{
+    box-shadow: 0 20px 40px rgba(0,0,0,.2);
+    text-align: center;
+    padding: 5%;
+    margin-top: 2%;
+}
+
+.contact-area div.contact-box i{
+    color: #3D4E57;
+    font-size: 2em;
+}
+
+.return{
+    background: #3D4E57;
+    margin-bottom: 5%;
+}
+
+
+.return a{
+    text-decoration: none;
+    color: white;
+}
+
+.back{
+    margin-top: 10vh;
+}
+
+.footer{
+    height: 20vh;
+    background: #3D4E57;
+    color: white;
+    text-align: center;
+    padding-top: 8vh;
+    box-shadow: 0 20px 40px rgba(0,0,0,.2);
+}
+
+
+/* general formatting for responsive content sections */
+.textleft{
+    padding: 0 5%;
+}
+
+.textleft h1, .textright h1{
+    margin-bottom: 3%;
+}
+
+.textright{
+    padding-right: 5%;
+}
+
+
+/* formatting for lightbox/slider */
+.curtain{
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+}
+
+.banner{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+}
+
+.slider{
+    /* display: none; */
+    width: 100%;
+    top: 10vh;
+    height: 80vh;
+    position: absolute;
+    overflow: hidden;
+}
+
+.slider img{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    object-fit: contain;
+}
+
+.next{
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    width: 50px;
+    height: 50px;
+    background-color: #3D4E57;
+    position: absolute;
+    top: 40%;
+    right: 0;
+    z-index: 990;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.pre{
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    width: 50px;
+    height: 50px;
+    background-color: #3D4E57;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    z-index: 990;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.close{
+   height: 50px;
+   width: 50px;
+   top: 10vh;
+   right: 0;
+   position: absolute;
+   z-index: 990; 
+}
+
+
+
+
+/* ------------------Formatting for Testimonial Section--------------------- */
+.cycle-pager { 
+    text-align: center; width: 100%; z-index: 500; position: relative; top: 10px; overflow: hidden;
+}
+.cycle-pager span { 
+    font-family: arial; font-size: 50px; width: 16px; height: 16px; 
+    display: inline-block; color: #ddd; cursor: pointer; 
+}
+.cycle-pager span.cycle-pager-active { color: #3D4E57;}
+.cycle-pager > * { cursor: pointer;}
+
+
+.holder{
+    box-shadow: 0 20px 40px rgba(0,0,0,.2);
+    /* padding: 5%; */
+    /* margin-top: 10%; */
+    text-align: center;
+    height: auto;
+    line-height: 1.5em;
+    font-family: cursive;
+    font-size: 18px;
+}
+
+.insideholder{
+    border: #3D4E57 2px solid;
+    padding: 5%;
+}
+
+.statement{
+    margin: auto;
+}
+
+.source{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 2em;
+}
+
+.work{
+
+}
+
+
+/* ---------------------------End Testimonial Formatting------------------------- */
+
+/* images and lists in content sections */
+.contentImage{
+    box-shadow: 0 20px 40px rgba(0,0,0,.2);
+    margin-top: 5vh;
+}
+
+.content p, .content ul li{
+    font-size: 1.1em;
+    margin-top: 24px;
+    line-height: 2;
+}
+
+/* Thumbnail gallery formatting */
+.thumbnail img, .thumbnail a img{
+    height: 280px;
+    object-fit: cover;
+}
+
+.thumbnail{
+    position: relative;
+}
+
+.middle{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text{
+    background-color: #a2a2a2;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;   
+}
+
+.thumbnail:hover .image{
+    opacity: 0.3;
+}
+
+.thumbnail:hover .middle{
+    opacity: 1;
+}
