@@ -151,14 +151,14 @@ $(function(){
           'A Critical Thinker',
           'An Adventurer',
           'An MBA',
-          'A Firefighter',
           'Confident',
           'A Lifelong Learner',
           'Motivated',
-          'A Data Disciple',
+          'A Data Scientist',
           'Passionately Curious',
           'A Problem Solver',
           'Looking for a Challenge',
+          'A Firefighter',
           'Ready to Help',
         ]
       });

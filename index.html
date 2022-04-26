@@ -38,6 +38,7 @@
                         <li> <a href="#about" class="scroll">About</a></li>
                         <li> <a href="#education" class="scroll">Education</a></li>
                         <li> <a href="#work" class="scroll">Work</a></li>
+                        <li> <a href="#projects" class="scroll">Projects</a></li>
                         <li> <a href="#play" class="scroll">Play</a></li>
                         <li> <a href="#contact" class="scroll">Contact</a></li>
                     </ul>
@@ -558,19 +559,41 @@
     <div class="row">
         <div class="col-sm-7">
             <div class="textleft">
-                <h1>Let's Build Cool Ish</h1>
-                <p><em> "Data is cool."</em> -Me</p>
-                <p>I like sports.  I like data.  I really like sports and data combined.</p>
-                <p>Yay sports.</p>
+                <h1>Fantasy Sports: A Data Strategy</h1>
+                <p><em> "Fantasy sports is all about taking data, parsing out what is meaningful, and deriving actionable insights from that."</em></p>
+                <p>Sports and data are two of my favorite things, and I have participated in mainstrem fantasy leagues for most of my adult life, so when
+                    I was invited to join a WNBA fantasy league I jumped at the chance. The only problem, I manage to find time to watch two, maybe three, WNBA
+                    games a year.  Beyond Breanna Stewart and Sue Bird (go Storm) I would be hard pressed to identify enough players by name to fill out a roster.
+                </p>
+                <p>
+                    This <em>problem</em> presented a perfect opportunity for some recreational data science. The league follows 9-category head to head rules, 
+                    meaning each week your roster faces off against an opposing roster with player performance measured across 9 statistical categories. Score higher
+                    than your oppenent in 5 of the categories and you win the week. The first rule of data science, make sure you understand the rules.
+                </p>
+                <p>
+                    A category based scoring system presents interesting strategic opportunities for those willing to dig into them. The goal doesn't need to be to draft
+                    the best basketball players possible, rather you want to draft the players that give you the best statistical profile in 5 or more statistical categories. 
+                    In reality, variance is a big factor so you likely want to build on more than five categories, but exactly how many is an individual strategic choice.
+                </p>
+                <p>
+                    To aid in this decision making, I scraped several years of box scores from the WNBA website. I then normalized the data to create value scores across all 
+                    9 categories (i.e. a score of 2 in the points category gives the same positive impact as a score of 2 in the rebounds category. Negative values mean the player 
+                    is below league average in that category). I built this data into an interactive dashboard comparing a players total value across all nine categories, with a players 
+                    value only considering a selected subset of the categories. If a players value in the subset of categories is higher than the total value, that is 
+                    a source of surplus draft value for your team.  
+                </p>
             </div>    
         </div>
         <div class="col-sm-5">
             <div class="textright">
-                <h1>The Thing</h1>
+                <h1>The Dashboard</h1>
                 <div class="contentImage">
                    <a href="../I_Am_Dave/projects/WNBA.html"> <img class="img-responsive img-rounded" src="images/wnba.JPG" alt=""></a></div>
             
-            <p>Fantasy sports and data.  What could be better</p>
+            <p>Knowing how to compare player performance across categories is key in fantasy leagues with category based scoring. Once you have settled 
+                on a subset of categories to chase, this tool helps identify the players that are more valuable to your specific strategy than to your 
+                competitors. Build up enough surplus value in this way, and win the league.
+            </p>
         </div>
         </div>
 
@@ -580,95 +603,8 @@
                  <div class="btn return"><a href='#WNBA'>Back to Projects</a></div>
              </div>
          </div>
-     
-
-     
-     
  </div>
-<!-- 
- <div id="testimonials" class="content" >        
-     <div class="row">
-         <div class="col-md-8 col-md-offset-2">
-             <h1>Testimonials</h1>
-             <br>
-             <div class="holder">
-                 <div class="insideholder">
-                 <div class="cycle-slideshow" 
-                     data-cycle-fx="fade" 
-                     data-cycle-timeout="10000"
-                     data-cycle-pause="10"
-                     data-cycle-slides="> div"
-                     data-cycle-pager=".cycle-pager">
-                     
-                     <div>
-                         <p class="statement">"Dave is a uniquely comprehensive whole enterprise modeler and thinker. His risk assessment and modeling capabilities are among the strongest of anyone I have worked with. Where data is comprehensive, his linear analysis is masterful. Where data is partial or uncertain, he is able to use linear tools iteratively to interrogate uncertainty, and recognize and separate upside opportunity and downside challenges in complex and uncertain scenarios. Dave is also a collaborative team member and leader. I would welcome his contribution to any team or project." </p>
-                         <p class="source">-Aric Mayer</p>
-                         <p class="work">Western Washington University</p>
-                     </div>
-                     
-                     <div>
-                         <p class="statement">"I've had the pleasure of working with Dave for a number of years now, first as a coworker and now as a colleauge at a different organization. He has a high level of personal integrity and I can trust that anything Dave does will be done right. Dave always strives to understand a situation and find the best solutions, often thinking outside the box. I would always pick Dave to be on my team, regardless of the task." </p>
-                         <p class="source">-Jenny Yoo</p>
-                         <p class="work">Washington Department of Ecology</p>
-                     </div>
 
-                     <div>
-                         <p class="statement">"Dave took the Marketing Mangement course with me which was heavy on case discussions. It was a rare treat to have a student who can look at both qualitative and quantitative data, glean interesting insights and then link those to broad strategic recommendations while making a very convincing persuasive argument. Dave will be a real asset to any team!"</p>
-                         <p class="source">-Dr. Tejvir Sekhon</p>
-                         <p class="work">Western Washington University</p>
-                     </div>
-
-                     <div>
-                         <p class="statement">"Dave is one of the very best students I've ever had in our MBA microeconomics and statistics courses over the last 30  years. He is bright, hard-working, inquisitive, and articulate; and he is a genuinely nice guy who works well with others. I am happy to give him my strongest and most enthusiastic recommendation!"</p>
-                         <p class="source">-Dr. Steve Henson</p>
-                         <p class="work">Western Washington University</p>
-                     </div>
-
-                     <div>
-                         <p class="statement">"Dave's interest in identifying data-centric and complex relationships between systems is overshadowed by his ability to explain multiple complex ideas on any front. After watching him achieve amazing academics for two years there are things that don't get the recognition they deserve like his willingness to help others without accolades or fanfare."</p>
-                         <p class="source">-Rod Redfern MBA</p>
-                         <p class="work">Western Washington University</p>
-                     </div>
-
-                     <div>
-                         <br>
-                         <p class="statement">"Dave and I worked together in environmental consulting in Massachusetts. He was one of the most efficient and competent people in the office and his awesome sense of humor brought joy to the workday and camraderie to our team"</p>
-                         <p class="source">-Anne Hamlin</p>
-                         <p class="work">Coneco Engineers &amp; Scientists</p>
-                     </div>
-                     <div>
-                         <br>
-                         <p class="statement">"Dave's generosity and easy connection with people are exceptional. His education, will for preparation, and positive attitude show integrity that is heartening as a team member."</p>
-                         <p class="source">-Russ Briskin</p>
-                         <p class="work">Firefighter</p>
-                     </div>
-                     <div>
-                         <p class="statement">"Dave was an invaluable asset on each project we worked on together. Not only did he execute sophisticated analytic brilliance, he also consistently offered fresh, create perspectives and solutions to complex problems. These traits coupled with his sense of humor and easy demeanor make Dave a fantastic team member"</p>
-                         <p class="source">-Kristine Baker MBA</p>
-                         <p class="work">Western Washington University</p>
-                     </div>
- 
-
-                 </div>
-                 <div class="cycle-pager"></div>
-             </div>
-               
-             </div>
-         </div>
-     </div>
-     <div class="row">
-     </div>
-         
-
-     <div class="row">
-         <div class="col-sm-12 selectors back">
-             <div class="btn return"><a href='#testimonials'>Back to About</a></div>
-         </div> 
-     </div> 
-
- </div> -->
-
- <!-- +++++++++++++END TESTIMONIAL SECTION++++++++++++++ -->
 
 <!--        Projects SECTION ENDS HERE        -->
 
